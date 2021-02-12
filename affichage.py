@@ -12,5 +12,5 @@ def afficher( liste ) :
   ax.add_collection(lc)
   ax.add_collection(muLine)
   #ax.autoscale()
-  pl.xlim([25, 50])
+  pl.xlim([0, 20])
   ax.margins(0.1)
