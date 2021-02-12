@@ -11,5 +11,6 @@ def afficher( liste ) :
   fig, ax = pl.subplots()
   ax.add_collection(lc)
   ax.add_collection(muLine)
-  ax.autoscale()
+  #ax.autoscale()
+  pl.xlim([25, 50])
   ax.margins(0.1)
