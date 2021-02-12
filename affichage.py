@@ -6,7 +6,7 @@ def afficher( liste ) :
   for élément in  liste :
     lines.append( [ ( mu , h )  ,  ( élément , h ) ])
     h += 1
-  muLine = mc.LineCollection([ [ ( mu , 0 )  , ( mu , len( notes )-1 )  ] ] , color = "red",  linewidths=2)
+  muLine = mc.LineCollection([ [ ( mu , 0 )  , ( mu , len( liste )-1 )  ] ] , color = "red",  linewidths=2)
   lc = mc.LineCollection(lines, color = "green",  linewidths=1)
   fig, ax = pl.subplots()
   ax.add_collection(lc)
